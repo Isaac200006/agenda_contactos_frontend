@@ -42,7 +42,7 @@ const NuevoContacto = () => {
     }, [params.id]);
 
     // Enviar un contacto a la API
-    const crearNuevoContacto = async (e) => {
+    const crearOEditarContacto = async (e) => {
         e.preventDefault();
 
         if (editar) {
@@ -78,7 +78,7 @@ const NuevoContacto = () => {
                     </div>
                     <div className="col-md-8 mx-auto">
                         <form
-                            onSubmit={crearNuevoContacto}
+                            onSubmit={crearOEditarContacto}
                             className="bg-white p-5 bordered">
                             <div className="form-group">
                                 <label htmlFor="nombres">Nombres</label>
@@ -109,7 +109,7 @@ const NuevoContacto = () => {
                             <div className="form-group">
                                 <label htmlFor="correo">Correo</label>
                                 <input
-                                    type="tel"
+                                    type="tex"
                                     className="form-control form-control-lg"
                                     id="correo"
                                     name="correo"
